@@ -36,7 +36,7 @@
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>90</y>
+      <y>150</y>
       <width>551</width>
       <height>456</height>
      </rect>
@@ -140,7 +140,7 @@
    <widget class="QPushButton" name="RestartGame">
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>160</x>
       <y>50</y>
       <width>93</width>
       <height>28</height>
@@ -149,6 +149,58 @@
     <property name="text">
      <string>Restart Game</string>
     </property>
+   </widget>
+   <widget class="QPushButton" name="revert_btn">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>50</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Revert</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="switchMode">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>50</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Switch Mode</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>110</y>
+      <width>231</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QRadioButton" name="radioButton_Player">
+       <property name="text">
+        <string>Player One</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton_Player_2">
+       <property name="text">
+        <string>Player Two</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
