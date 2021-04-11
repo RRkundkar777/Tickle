@@ -1,0 +1,18 @@
+Tickle version 1.0.0
+End User License Agreement
+
+
+1. CONSIDERATION TO RSOFT
+ a. This program is Free and Open Source Software
+
+2. COPIES
+You may make copies of the Program in any form as
+necessary for use, study and modification purposes.
+This Program is copyrighted but you are free to study and modify it.
+ 
+3. OWNERSHIP
+ The original and any copies of the Programs, including
+translations, compilations, partial copies, modifications, and updates, are the property of RSOFT.
+
+4. WARRANTY DISCLAIMER
+ This is a Free and Open Source Software with ABSOLUTELY NO WARRANTY
