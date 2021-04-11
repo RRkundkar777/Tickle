@@ -6,6 +6,9 @@
 // For debugging
 #include<QDebug>
 
+// For using min() and max() functions
+#include<algorithm>
+
 // Enum for TDEBUGGER
 enum
 {
@@ -15,36 +18,36 @@ enum
 // TDEBUGGER
 int TDEBUGGER = on;
 
-// TicButton Constructor
+// TicButton Constructor Definition
 TicButton::TicButton(QWidget*&):QPushButton()
 {
 }
 
-// Setting Label of Buttons
+// Setting Label of TicButton
 void TicButton::setLabel()
 {
     this->setText("_");
 }
 
-// Setting the Row of Button
+// Setting the Row of TicButton
 void TicButton::setRow(int row)
 {
     this->row = row;
 }
 
-// Getting the Row of Button
+// Getting the Row of TicButton
 int TicButton::getRow()
 {
     return this->row;
 }
 
-// Setting the Column of Button
+// Setting the Column of TicButton
 void TicButton::setCol(int col)
 {
     this->col = col;
 }
 
-// Getting the Column of Button
+// Getting the Column of TicButton
 int TicButton::getCol()
 {
     return this->col;
@@ -58,14 +61,14 @@ int TicButton::getCol()
     // Either player winning and not accepting the win
     // The Game is Draw
     // The Game is in Progress
-// This will also set a button acccording to the current player and vacancy of a slot
+// This will also set a button acccording to the current player and vacancy of a slot (2 player mode)
 
 int TicButton::setBtn(char array[3][3],int *player)
 {
     // Message Box for Displaying a Warning (In case the Button is already occupied)
     QMessageBox messageBox;
     messageBox.setIcon(QMessageBox::Icon::Warning);
-    messageBox.setWindowTitle(tr("Warning"));
+    messageBox.setWindowTitle(("Warning"));
     messageBox.setText("Slot Already Occpuied!!!\n Stop");
     messageBox.addButton(QMessageBox::Ok);
 
@@ -124,7 +127,7 @@ int TicButton::setBtn(char array[3][3],int *player)
     WinMessage.addButton("Reject" ,QMessageBox::RejectRole);
 
     // Player 1 wins --> Show that Player 1 won
-    if(winLose == 10)
+    if(winLose == HUMAN)
     {
         WinMessage.setText("Player 1 has Won the Game \n Do you accept the defeat?");
 
@@ -137,11 +140,11 @@ int TicButton::setBtn(char array[3][3],int *player)
         // If losing player rejects defeat --> return -900
         else if(rejected == 1)
         {
-            return -900;
+            return REJECTED;
         }
     }
     // Player 2 wins --> Show that Player 2 won
-    else if(winLose == -10)
+    else if(winLose == MACHINE)
     {
         WinMessage.setText("Player 2 Won the Game \n Do you accept the defeat?");
         int rejected = WinMessage.exec();
@@ -153,11 +156,11 @@ int TicButton::setBtn(char array[3][3],int *player)
         // If losing player rejects defeat --> return -900
         else if(rejected == 1)
         {
-            return -900;
+            return REJECTED;
         }
     }
     // If Game Draw --> Show that Game is Draw
-    else if(winLose == -81)
+    else if(winLose == DRAW)
     {
         WinMessage.setText("Game Draw");
         WinMessage.exec();
@@ -173,8 +176,11 @@ bool TicButton::areMovesLeft(char arr[3][3])
     // Checking the complete array for moves
     for (int i = 0; i < 3; i++)
     {
-        for (int j = 0; j < 3; j++){
-            if (arr[i][j] == '_'){
+        for (int j = 0; j < 3; j++)
+        {
+            // If any array element is empty --> A move can br played
+            if (arr[i][j] == '_')
+            {
                 return true;
             }
         }
@@ -192,9 +198,9 @@ int TicButton::evaluate(char array[3][3])
         if(array[row][0] == array[row][1] && array[row][1] == array[row][2])
         {
             if (array[row][0] == 'X')
-                return +10;
+                return HUMAN;
             else if (array[row][0] == 'O')
-                return -10;
+                return MACHINE;
         }
     }
 
@@ -205,10 +211,10 @@ int TicButton::evaluate(char array[3][3])
         if (array[0][col] == array[1][col] && array[1][col] == array[2][col])
         {
             if (array[0][col] == 'X')
-                return +10;
+                return HUMAN;
 
             else if (array[0][col] == 'O')
-                return -10;
+                return MACHINE;
         }
     }
 
@@ -218,18 +224,18 @@ int TicButton::evaluate(char array[3][3])
     if (array[0][0] == array[1][1] && array[1][1] == array[2][2])
     {
         if (array[0][0] == 'X')
-            return +10;
+            return HUMAN;
         else if (array[0][0] == 'O')
-            return -10;
+            return MACHINE;
     }
 
     // Checking the non-principle diagonal
     if (array[0][2] == array[1][1] && array[1][1] == array[2][0])
     {
         if (array[0][2] == 'X')
-            return +10;
+            return HUMAN;
         else if (array[0][2] == 'O')
-            return -10;
+            return MACHINE;
     }
 
     // Else if none of them have won then and Moves are Remaining --> Return 0
@@ -240,10 +246,10 @@ int TicButton::evaluate(char array[3][3])
     }
     // Else --> Return -81
     // That is Game Draw
-    return -81;
+    return DRAW;
 }
 
-// Function to Reset Button Text
+// Function to Reset TicButton's Text
 void TicButton::resetButton()
 {
     this->setStyleSheet("font-size:100px;color:black;");
@@ -264,80 +270,9 @@ void TicButton::print2D(char array[3][3])
     qDebug() << " ";
 }
 
-//int minimax(char board[3][3], int depth, bool isMax)
-//{
-//    int score = evaluate(board);
-
-//    // If Maximizer has won the game return his/her
-//    // evaluated score
-//    if (score == 10)
-//        return score;
-
-//    // If Minimizer has won the game return his/her
-//    // evaluated score
-//    if (score == -10)
-//        return score;
-
-//    // If there are no more moves and no winner then
-//    // it is a tie
-//    if (isMovesLeft(board)==false)
-//        return 0;
-
-//    // If this maximizer's move
-//    if (isMax)
-//    {
-//        int best = -1000;
-
-//        // Traverse all cells
-//        for (int i = 0; i<3; i++)
-//        {
-//            for (int j = 0; j<3; j++)
-//            {
-//                // Check if cell is empty
-//                if (board[i][j]=='_')
-//                {
-//                    // Make the move
-//                    board[i][j] = player;
-
-//                    // Call minimax recursively and choose
-//                    // the maximum value
-//                    best = max( best,
-//                        minimax(board, depth+1, !isMax) );
-
-//                    // Undo the move
-//                    board[i][j] = '_';
-//                }
-//            }
-//        }
-//        return best;
-//    }
-
-//    // If this minimizer's move
-//    else
-//    {
-//        int best = 1000;
-
-//        // Traverse all cells
-//        for (int i = 0; i<3; i++)
-//        {
-//            for (int j = 0; j<3; j++)
-//            {
-//                // Check if cell is empty
-//                if (board[i][j]=='_')
-//                {
-//                    // Make the move
-//                    board[i][j] = opponent;
-
-//                    // Call minimax recursively and choose
-//                    // the minimum value
-//                    best = min(best,
-//                           minimax(board, depth+1, !isMax));
-
-//                    // Undo the move
-//                    board[i][j] = '_';
-//                }
-//            }
-//        }
-//        return best;
-//    }
-//}
+// Function to set a TicButton the Computer's style
+void TicButton::setCompStyle()
+{
+    this->setStyleSheet("font-size: 100px;color:blue;");
+    this->setText("O");
+}
