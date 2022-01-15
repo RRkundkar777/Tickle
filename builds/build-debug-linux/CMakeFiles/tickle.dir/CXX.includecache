@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
+../../headers/config.h
+QString
+-
+QDebug
+-
+
 ../../headers/mainwindow.h
 QMainWindow
 -
 ticbutton.h
 ../../headers/ticbutton.h
+
+../../headers/stack.h
 
 ../../headers/ticbutton.h
 QWidget
@@ -21,6 +29,10 @@ QPushButton
 /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/QDebug
 qdebug.h
 /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qdebug.h
+
+/home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/QString
+qstring.h
+/home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qstring.h
 
 /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/QVariant
 qvariant.h
@@ -1462,53 +1474,19 @@ QtGui/qkeysequence.h
 QtGui/qevent.h
 -
 
-/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/builds/build-debug-linux/tickle_autogen/K6S233IZAZ/moc_mainwindow.cpp
-headers/mainwindow.h
-/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/builds/build-debug-linux/tickle_autogen/K6S233IZAZ/headers/mainwindow.h
-QtCore/qbytearray.h
--
-QtCore/qmetatype.h
--
-
-/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/builds/build-debug-linux/tickle_autogen/K6S233IZAZ/moc_ticbutton.cpp
-headers/ticbutton.h
-/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/builds/build-debug-linux/tickle_autogen/K6S233IZAZ/headers/ticbutton.h
-QtCore/qbytearray.h
--
-QtCore/qmetatype.h
--
-
-/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/builds/build-debug-linux/tickle_autogen/mocs_compilation.cpp
-K6S233IZAZ/moc_mainwindow.cpp
-/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/builds/build-debug-linux/tickle_autogen/K6S233IZAZ/moc_mainwindow.cpp
-K6S233IZAZ/moc_ticbutton.cpp
-/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/builds/build-debug-linux/tickle_autogen/K6S233IZAZ/moc_ticbutton.cpp
-
-/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/main.cpp
-mainwindow.h
-/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/mainwindow.h
-QApplication
--
-
 /media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/mainwindow.cpp
+QDebug
+-
+QMessageBox
+-
 mainwindow.h
 /media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/mainwindow.h
 ui_mainwindow.h
 /media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/ui_mainwindow.h
-QDebug
--
-QMessageBox
--
-
-/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/ticbutton.cpp
-ticbutton.h
-/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/ticbutton.h
-QMessageBox
--
-QDebug
--
-algorithm
--
+stack.h
+/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/stack.h
+config.h
+/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/config.h
 
 tickle_autogen/include/ui_mainwindow.h
 QtCore/QVariant

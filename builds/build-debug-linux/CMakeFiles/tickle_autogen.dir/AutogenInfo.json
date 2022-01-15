@@ -8,9 +8,24 @@
 	"HEADERS" : 
 	[
 		[
+			"/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/headers/config.h",
+			"MU",
+			"K6S233IZAZ/moc_config.cpp"
+		],
+		[
+			"/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/headers/location.h",
+			"MU",
+			"K6S233IZAZ/moc_location.cpp"
+		],
+		[
 			"/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/headers/mainwindow.h",
 			"MU",
 			"K6S233IZAZ/moc_mainwindow.cpp"
+		],
+		[
+			"/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/headers/stack.h",
+			"MU",
+			"K6S233IZAZ/moc_stack.cpp"
 		],
 		[
 			"/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/headers/ticbutton.h",
@@ -79,6 +94,10 @@
 		],
 		[
 			"/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/mainwindow.cpp",
+			"MU"
+		],
+		[
+			"/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/stack.cpp",
 			"MU"
 		],
 		[

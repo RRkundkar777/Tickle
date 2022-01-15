@@ -130,7 +130,16 @@
 		<Unit filename="/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/forms/mainwindow.ui">
 			<Option target="tickle"/>
 		</Unit>
+		<Unit filename="/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/headers/config.h">
+			<Option target="tickle"/>
+		</Unit>
+		<Unit filename="/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/headers/location.h">
+			<Option target="tickle"/>
+		</Unit>
 		<Unit filename="/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/headers/mainwindow.h">
+			<Option target="tickle"/>
+		</Unit>
+		<Unit filename="/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/headers/stack.h">
 			<Option target="tickle"/>
 		</Unit>
 		<Unit filename="/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/headers/ticbutton.h">
@@ -140,6 +149,9 @@
 			<Option target="tickle"/>
 		</Unit>
 		<Unit filename="/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/mainwindow.cpp">
+			<Option target="tickle"/>
+		</Unit>
+		<Unit filename="/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/stack.cpp">
 			<Option target="tickle"/>
 		</Unit>
 		<Unit filename="/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/ticbutton.cpp">

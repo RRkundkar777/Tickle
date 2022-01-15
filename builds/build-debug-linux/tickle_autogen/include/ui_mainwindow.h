@@ -46,7 +46,7 @@ public:
     QPushButton *RestartGame;
     QPushButton *revert_btn;
     QPushButton *switchMode;
-    QWidget *widget;
+    QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout;
     QRadioButton *radioButton_Player;
     QRadioButton *radioButton_Player_2;
@@ -134,25 +134,25 @@ public:
 
         RestartGame = new QPushButton(centralwidget);
         RestartGame->setObjectName(QStringLiteral("RestartGame"));
-        RestartGame->setGeometry(QRect(160, 50, 93, 28));
+        RestartGame->setGeometry(QRect(160, 50, 131, 28));
         revert_btn = new QPushButton(centralwidget);
         revert_btn->setObjectName(QStringLiteral("revert_btn"));
         revert_btn->setGeometry(QRect(560, 50, 93, 28));
         switchMode = new QPushButton(centralwidget);
         switchMode->setObjectName(QStringLiteral("switchMode"));
-        switchMode->setGeometry(QRect(360, 50, 93, 28));
-        widget = new QWidget(centralwidget);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(290, 110, 231, 22));
-        horizontalLayout = new QHBoxLayout(widget);
+        switchMode->setGeometry(QRect(360, 50, 121, 28));
+        layoutWidget1 = new QWidget(centralwidget);
+        layoutWidget1->setObjectName(QStringLiteral("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(290, 110, 231, 27));
+        horizontalLayout = new QHBoxLayout(layoutWidget1);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        radioButton_Player = new QRadioButton(widget);
+        radioButton_Player = new QRadioButton(layoutWidget1);
         radioButton_Player->setObjectName(QStringLiteral("radioButton_Player"));
 
         horizontalLayout->addWidget(radioButton_Player);
 
-        radioButton_Player_2 = new QRadioButton(widget);
+        radioButton_Player_2 = new QRadioButton(layoutWidget1);
         radioButton_Player_2->setObjectName(QStringLiteral("radioButton_Player_2"));
 
         horizontalLayout->addWidget(radioButton_Player_2);
@@ -160,7 +160,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 26));
+        menubar->setGeometry(QRect(0, 0, 800, 24));
         menuMode = new QMenu(menubar);
         menuMode->setObjectName(QStringLiteral("menuMode"));
         MainWindow->setMenuBar(menubar);

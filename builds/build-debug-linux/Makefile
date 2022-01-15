@@ -190,6 +190,33 @@ src/mainwindow.cpp.s:
 	$(MAKE) -f CMakeFiles/tickle.dir/build.make CMakeFiles/tickle.dir/src/mainwindow.cpp.s
 .PHONY : src/mainwindow.cpp.s
 
+src/stack.o: src/stack.cpp.o
+
+.PHONY : src/stack.o
+
+# target to build an object file
+src/stack.cpp.o:
+	$(MAKE) -f CMakeFiles/tickle.dir/build.make CMakeFiles/tickle.dir/src/stack.cpp.o
+.PHONY : src/stack.cpp.o
+
+src/stack.i: src/stack.cpp.i
+
+.PHONY : src/stack.i
+
+# target to preprocess a source file
+src/stack.cpp.i:
+	$(MAKE) -f CMakeFiles/tickle.dir/build.make CMakeFiles/tickle.dir/src/stack.cpp.i
+.PHONY : src/stack.cpp.i
+
+src/stack.s: src/stack.cpp.s
+
+.PHONY : src/stack.s
+
+# target to generate assembly for a file
+src/stack.cpp.s:
+	$(MAKE) -f CMakeFiles/tickle.dir/build.make CMakeFiles/tickle.dir/src/stack.cpp.s
+.PHONY : src/stack.cpp.s
+
 src/ticbutton.o: src/ticbutton.cpp.o
 
 .PHONY : src/ticbutton.o
@@ -260,6 +287,9 @@ help:
 	@echo "... src/mainwindow.o"
 	@echo "... src/mainwindow.i"
 	@echo "... src/mainwindow.s"
+	@echo "... src/stack.o"
+	@echo "... src/stack.i"
+	@echo "... src/stack.s"
 	@echo "... src/ticbutton.o"
 	@echo "... src/ticbutton.i"
 	@echo "... src/ticbutton.s"

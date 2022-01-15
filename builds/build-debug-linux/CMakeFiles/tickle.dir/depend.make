@@ -119,9 +119,12 @@ CMakeFiles/tickle.dir/src/main.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/Qt
 CMakeFiles/tickle.dir/src/main.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtWidgets/qwidget.h
 CMakeFiles/tickle.dir/src/main.cpp.o: ../../src/main.cpp
 
+CMakeFiles/tickle.dir/src/mainwindow.cpp.o: ../../headers/config.h
 CMakeFiles/tickle.dir/src/mainwindow.cpp.o: ../../headers/mainwindow.h
+CMakeFiles/tickle.dir/src/mainwindow.cpp.o: ../../headers/stack.h
 CMakeFiles/tickle.dir/src/mainwindow.cpp.o: ../../headers/ticbutton.h
 CMakeFiles/tickle.dir/src/mainwindow.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/QDebug
+CMakeFiles/tickle.dir/src/mainwindow.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/QString
 CMakeFiles/tickle.dir/src/mainwindow.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/QVariant
 CMakeFiles/tickle.dir/src/mainwindow.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qabstractitemmodel.h
 CMakeFiles/tickle.dir/src/mainwindow.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qalgorithms.h
@@ -276,6 +279,38 @@ CMakeFiles/tickle.dir/src/mainwindow.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/incl
 CMakeFiles/tickle.dir/src/mainwindow.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtWidgets/qwidget.h
 CMakeFiles/tickle.dir/src/mainwindow.cpp.o: ../../src/mainwindow.cpp
 CMakeFiles/tickle.dir/src/mainwindow.cpp.o: tickle_autogen/include/ui_mainwindow.h
+
+CMakeFiles/tickle.dir/src/stack.cpp.o: ../../headers/stack.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/QString
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qarraydata.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qatomic.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qatomic_bootstrap.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qatomic_cxx11.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qatomic_msvc.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qbasicatomic.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qbytearray.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qchar.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qcompilerdetection.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qconfig-bootstrapped.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qconfig.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qflags.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qgenericatomic.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qglobal.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qglobalstatic.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qlogging.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qmutex.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qnamespace.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qnumeric.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qprocessordetection.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qrefcount.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qstring.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qstringbuilder.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qsysinfo.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qsystemdetection.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qtcore-config.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qtypeinfo.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qversiontagging.h
+CMakeFiles/tickle.dir/src/stack.cpp.o: ../../src/stack.cpp
 
 CMakeFiles/tickle.dir/src/ticbutton.cpp.o: ../../headers/ticbutton.h
 CMakeFiles/tickle.dir/src/ticbutton.cpp.o: /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/QDebug

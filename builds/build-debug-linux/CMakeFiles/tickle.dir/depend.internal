@@ -120,9 +120,12 @@ CMakeFiles/tickle.dir/src/main.cpp.o
  /home/rushikesh/Qt/5.9.9/gcc_64/include/QtWidgets/qwidget.h
  /media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/main.cpp
 CMakeFiles/tickle.dir/src/mainwindow.cpp.o
+ ../../headers/config.h
  ../../headers/mainwindow.h
+ ../../headers/stack.h
  ../../headers/ticbutton.h
  /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/QDebug
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/QString
  /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/QVariant
  /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qabstractitemmodel.h
  /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qalgorithms.h
@@ -277,6 +280,38 @@ CMakeFiles/tickle.dir/src/mainwindow.cpp.o
  /home/rushikesh/Qt/5.9.9/gcc_64/include/QtWidgets/qwidget.h
  /media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/mainwindow.cpp
  tickle_autogen/include/ui_mainwindow.h
+CMakeFiles/tickle.dir/src/stack.cpp.o
+ ../../headers/stack.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/QString
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qarraydata.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qatomic.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qatomic_bootstrap.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qatomic_cxx11.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qatomic_msvc.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qbasicatomic.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qbytearray.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qchar.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qcompilerdetection.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qconfig-bootstrapped.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qconfig.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qflags.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qgenericatomic.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qglobal.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qglobalstatic.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qlogging.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qmutex.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qnamespace.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qnumeric.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qprocessordetection.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qrefcount.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qstring.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qstringbuilder.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qsysinfo.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qsystemdetection.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qtcore-config.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qtypeinfo.h
+ /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/qversiontagging.h
+ /media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/stack.cpp
 CMakeFiles/tickle.dir/src/ticbutton.cpp.o
  ../../headers/ticbutton.h
  /home/rushikesh/Qt/5.9.9/gcc_64/include/QtCore/QDebug

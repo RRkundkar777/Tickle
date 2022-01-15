@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/main.cpp" "/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/builds/build-debug-linux/CMakeFiles/tickle.dir/src/main.cpp.o"
   "/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/mainwindow.cpp" "/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/builds/build-debug-linux/CMakeFiles/tickle.dir/src/mainwindow.cpp.o"
+  "/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/stack.cpp" "/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/builds/build-debug-linux/CMakeFiles/tickle.dir/src/stack.cpp.o"
   "/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/src/ticbutton.cpp" "/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/builds/build-debug-linux/CMakeFiles/tickle.dir/src/ticbutton.cpp.o"
   "/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/builds/build-debug-linux/tickle_autogen/mocs_compilation.cpp" "/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/builds/build-debug-linux/CMakeFiles/tickle.dir/tickle_autogen/mocs_compilation.cpp.o"
   )
