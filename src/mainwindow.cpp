@@ -1,29 +1,28 @@
-// The UI and Logic of MainWindow
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
-
-// For Debugging
+// QT System Libs
 #include<QDebug>
-// For displaying messages
 #include<QMessageBox>
 
-// Enum for Debugger
-enum
-{
-  on = 1,
-  off = 0
-};
-// Debugger
-int DEBUGGER = on;
+// mainwindow and config classes
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+#include"stack.h"
+#include"config.h"
 
-// Enum for Game Mode
-enum
+// Constructor
+MainWindow::MainWindow(QWidget *parent)
+    : QMainWindow(parent)
+    , ui(new Ui::MainWindow)
 {
-    computer = 0,
-    twoPlayer = 1
-};
-// Game Mode
-int mode = computer;
+    ui->setupUi(this);
+    // The player who will make first move is Player1/Human
+    ui->radioButton_Player->setChecked(1);
+}
+
+// Destructor
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
 
 // Function to ToggleMode
 void MainWindow::ToggleMode(int *mode)
@@ -42,32 +41,8 @@ void MainWindow::ToggleMode(int *mode)
         ui->radioButton_Player->setText("Human");
         ui->radioButton_Player_2->setText("Computer");
     }
-    qDebug() << "Toggled";
+    tdebug("Toggled mode",TC_DBG,__FILE__);
 }
-
-// Function definition of Constructor, Destructor and Member Functions
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
-{
-    ui->setupUi(this);
-    // The player who will make first move is Player1/Human
-    ui->radioButton_Player->setChecked(1);
-}
-
-// Destructor of MainWindow
-MainWindow::~MainWindow()
-{
-    delete ui;
-}
-
-// The Game Array Storing the State of the Board
-char gameArray[3][3] = {{'_','_','_'},
-                        {'_','_','_'},
-                        {'_','_','_'}};
-
-// Player variable for deciding the currently active player
-int player = 0;
 
 // Function to Toggle Player in UI
 void MainWindow::TogglePlayer()
@@ -108,100 +83,13 @@ void MainWindow::RestartGame()
             gameArray[i][j] = '_';
         }
     }
+
     // Resetting player to Player1/Human
     player = 0;
 
     // Displaying the changes in UI
     TogglePlayer();
 }
-
-// On Restart Button Clicked --> Restart Game
-void MainWindow::on_RestartGame_clicked()
-{
-    RestartGame();
-}
-
-/*---------------------------------------Stack Section -------------------------------------------------------*/
-// Structure of a move
-struct move
-{
-   int row,col;
-   char data;
-   struct move* next;
-};
-
-typedef move* stack;
-
-// Functions on a Stack
-
-// Initialising the Stack
-void init(stack *S1)
-{
-    *S1 = NULL;
-}
-
-// Pushing a move into stack
-void pushIntoStack(stack *S1,int row,int col,char* data)
-{
-    // Initialising a newnode
-    move *m1 = (move*)malloc(sizeof(move));
-    // Assigning the data to newnode
-    m1->row = row;
-    m1->col = col;
-    m1->data = *data;
-    // Handling empty stack case
-    if(*S1 == NULL)
-    {
-       *S1 = m1;
-        return;
-    }
-
-    // Pushing into Stack
-    m1->next = (*S1);
-    (*S1) = m1;
-    return;
-}
-
-// Pop a move from stack
-void popFromStack(stack *S1,move** m1)
-{
-    // Handling Empty Stack
-    if((*S1) == NULL)
-    {
-            qDebug() << "Stack Empty\n";
-    }
-    // If Stack is Unary --> Set it as NULL
-    else if((*S1)->next == NULL)
-    {
-            move* traveller = *S1;
-            *S1 = NULL;
-            (*m1)->col = traveller->col;
-            (*m1)->row = traveller->row;
-            (*m1)->data = traveller->data;
-            free(traveller);
-
-    }
-    // Else --> Remove an element from the stack
-    else
-        {
-            move* traveller = *S1;
-            *S1 = (*S1)->next;
-            (*m1)->col = traveller->col;
-            (*m1)->row = traveller->row;
-            (*m1)->data = traveller->data;
-            free(traveller);
-        }
-}
-
-// Top of the Stack
-char stackTopData(stack S1)
-{
-    return S1->data;
-}
-
-// MoveStack for recording the moves made by the players
-stack moveStack = NULL;
-
 
 /*------------------------------------------Button Clicked Events---------------------------------------------*/
 void MainWindow::on_btn_0_0_clicked()
@@ -973,6 +861,12 @@ int MainWindow::setBtnAuto(char array[3][3],int *player,TicButton *t1)
     return 0;
 }
 
+// --------------------------------------- Button Click Events ---------------------------------------------//
+// On Restart Button Clicked --> Restart Game
+void MainWindow::on_RestartGame_clicked()
+{
+    RestartGame();
+}
 
 // Switch Mode Click Event
 void MainWindow::on_switchMode_clicked()

@@ -1,13 +1,21 @@
+// Starting Point of application
+
+// QApplication for running app
+#include<QApplication>
+
+// Main window class
 #include "mainwindow.h"
 
-#include <QApplication>
-
-// Main Application
 int main(int argc, char *argv[])
 {
-    QApplication app(argc, argv);
-    MainWindow window;
-    window.setWindowTitle("Tickle");
-    window.show();
-    return app.exec();
+    // Instance of app and window
+    QApplication tickle(argc, argv);
+    MainWindow gameWindow;
+
+    // Set the game window title
+    gameWindow.setWindowTitle("Tickle");
+
+    // Execute the app
+    gameWindow.show();
+    return tickle.exec();
 }

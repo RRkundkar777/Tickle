@@ -1,7 +1,6 @@
 #ifndef TICBUTTON_H
 #define TICBUTTON_H
 
-// Classes from which TicButton will inherit
 #include <QWidget>
 #include<QPushButton>
 
@@ -12,7 +11,7 @@
 #define REJECTED -900
 
 
-// Class TicButton inherited from QPushButton
+// Class Declaration
 class TicButton:public QPushButton
 {
     Q_OBJECT
