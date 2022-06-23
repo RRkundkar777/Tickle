@@ -22,7 +22,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 
 # Location of QT .cmake files
-set(CMAKE_PREFIX_PATH "/home/rushikesh/Qt/5.9.9/gcc_64/lib/cmake")
+set(CMAKE_PREFIX_PATH "/home/rushikesh/qt5/5.9.9/gcc_64/lib/cmake")
 
 # Find required Qt Packages 
 find_package(Qt5Core REQUIRED)
