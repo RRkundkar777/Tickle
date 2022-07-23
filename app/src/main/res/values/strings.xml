@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">tickle</string>
+    <string name="heading">Welcome to RyuApps</string>
+    <string name="griddesc">Our Main GRID</string>
+    <string name="opponentTurn">"O's Turn - Tap to play"</string>
+    <string name="playerTurn">X\'s Turn - Tap to play</string>
+    <string name="resetMessage">Reset successful</string>
+    <string name="playerWon">X has won</string>
+    <string name="opponentWon">O has won</string>
+    <string name="gameDraw">Stalemate</string>
+    <string name="mode1">Single Player</string>
+    <string name="mode2">Two Player</string>
+</resources>

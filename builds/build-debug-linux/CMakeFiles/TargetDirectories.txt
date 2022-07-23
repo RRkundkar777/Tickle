@@ -1,4 +1,0 @@
-/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/builds/build-debug-linux/CMakeFiles/rebuild_cache.dir
-/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/builds/build-debug-linux/CMakeFiles/edit_cache.dir
-/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/builds/build-debug-linux/CMakeFiles/tickle.dir
-/media/rushikesh/MacOS/MTXOS/desktop-projects/tickle/builds/build-debug-linux/CMakeFiles/tickle_autogen.dir
