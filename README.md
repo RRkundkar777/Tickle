@@ -5,7 +5,7 @@
 
 ### Gameplay
 
-<div style="display: flex;align-items: center;">
+<div style="display: flex;align-items: center;justify-content: center;">
     <img src="screenshots/gameplay.gif" style="align:center; height:500px;width:250px;" />
 </div>
 
