@@ -5,8 +5,8 @@
 
 ### Gameplay
 
-<div>
-    <img src="screenshots/gameplay.gif" style="align:center; height:500px;width:200px;" />
+<div style="display: flex;align-items: center;">
+    <img src="screenshots/gameplay.gif" style="align:center; height:500px;width:250px;" />
 </div>
 
 <hr />
