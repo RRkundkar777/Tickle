@@ -6,7 +6,7 @@
 ### Gameplay
 
 <div>
-    <img src="screenshots/gameplay.gif" style="align:center; height:100px;width:40px;" />
+    <img src="screenshots/gameplay.gif" style="align:center; height:500px;width:200px;" />
 </div>
 
 <hr />
